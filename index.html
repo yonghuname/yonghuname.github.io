@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>汤 - 个人简历</title>
+    <style>
+        * {
+            margin: 0; padding: 0; box-sizing: border-box;
+        }
+        body {
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            background: #f7f9fc;
+            color: #333;
+            line-height: 1.6;
+            padding: 20px;
+        }
+        .container {
+            max-width: 900px;
+            background: white;
+            margin: 0 auto;
+            padding: 40px 50px;
+            border-radius: 10px;
+            box-shadow: 0 8px 20px rgb(0 0 0 / 0.1);
+        }
+        .header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 30px;
+            border-bottom: 3px solid #1e40af;
+            padding-bottom: 15px;
+        }
+        .photo {
+            flex-shrink: 0;
+            width: 110px;
+            height: 140px;
+            border-radius: 5px;
+            overflow: hidden;
+            margin-right: 30px;
+            box-shadow: 0 0 10px rgba(30, 64, 175, 0.3);
+        }
+        .photo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .personal-info {
+            flex: 1;
+        }
+        .personal-info h1 {
+            font-size: 2.8rem;
+            color: #1e40af;
+            margin-bottom: 10px;
+        }
+        .personal-info p {
+            font-size: 1rem;
+            margin-bottom: 6px;
+            color: #444;
+        }
+        .section {
+            margin-bottom: 40px;
+        }
+        h2 {
+            font-size: 1.8rem;
+            margin-bottom: 12px;
+            color: #1e40af;
+            border-bottom: 3px solid #1e40af;
+            padding-bottom: 6px;
+        }
+        h3 {
+            font-size: 1.3rem;
+            margin-bottom: 8px;
+            color: #2563eb;
+        }
+        ul {
+            list-style: disc inside;
+            margin-bottom: 20px;
+        }
+        p, li {
+            font-size: 1rem;
+        }
+        .job-date {
+            font-style: italic;
+            color: #666;
+            font-size: 0.9rem;
+            margin-left: 10px;
+        }
+        .skill-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+        .skill-list span {
+            background: #e0e7ff;
+            color: #3730a3;
+            padding: 6px 12px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+        }
+        @media (max-width: 600px) {
+            .container {
+                padding: 30px 20px;
+            }
+            h1 {
+                font-size: 2rem;
+            }
+            h2 {
+                font-size: 1.4rem;
+            }
+            .header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .photo {
+                margin-bottom: 15px;
+                margin-right: 0;
+                width: 100px;
+                height: 130px;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <div class="photo">
+            <!-- 把你的照片文件名改成 photo.jpg，放和这个文件同目录 -->
+            <img src="0.png" alt="照片" />
+        </div>
+        <div class="personal-info">
+            <h1>MIO</h1>
+ 
+ 
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>教育经历 / 所获奖励</h2>
+        <p><strong>南开大学（985）统计与数据科学学院</strong> 硕士 2025.9 – 2027.6<br />
+            数据科学</p>
+        <p><strong>上海海洋大学（双一流）信息学院</strong> 本科 2021.9 – 2025.6<br />
+            数据科学与大数据技术</p>
+        <p>所获奖学金：王素君奖学金1次、国家励志奖学金3次、校一等教学金4次及若干其他奖学金。本科GPA：3.8/4。</p>
+        <p>竞赛奖项：中国大学生计算机竞赛国三等奖、上海市大学生计算机应用能力大赛二等奖、全国大学生数学竞赛三等奖、中国大学生GIS软件开发竞赛一等奖、"蓝桥杯"省三等奖、校数学建模一等奖、校程序设计比赛三等奖。</p>
+    </div>
+
+    <div class="section">
+        <h2>实习经历</h2>
+
+        <div>
+            <h3>上海临科智华科技有限公司｜算法实习生 <span class="job-date">2025.3 – 7</span></h3>
+            <p>负责大语言模型部署优化，如vllm部署qwen3开发可用界面。对72B qwen2.5 进行全参微调，使用监督微调cot数据集训练提升模型思维能力并进行评估。使用deepspeed zero3优化显存占用 。设计并实现LLM 模型评估体系，结合自动与人类评估方法。负责使用fastapi封装可以高并发异步的算法。构建了可以上传算法，用户搜索，后端调用的api。构建docker镜像。部署维护browseruse，修改源码使得国内网络环境可用，优化其中action若干操作。监控生产环境性能指标并优化。同时为团队提供部署与评估的技术支持
+
+            </p>
+        </div>
+
+        <div>
+            <h3>上海天旦网络科技发展有限公司｜Java开发实习生 <span class="job-date">2025.1 – 2025.3</span></h3>
+            <p>负责网络包后端配置的解码与问题定位，优化流程，显著提升工作效率；开发并维护电网IEC104协议解码器，助力公司拓展电力行业市场；参与测试验证，提出解码代码优化建议。通过实习，加强Java编程，熟悉网络协议解码技术，提升跨部门协作能力。</p>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>项目经历</h2>
+        <div>
+        <h3>基于 LangChain 的八字命理 LLM 系统 <span class="job-date">2025.06 – 至今</span></h3>
+        <p>基于 dify 设计结合工具调用的命理分析系统，基于本地qwen3-7b，使用 LangChain 实现实现多步骤推理流程。设计提示词工程，融合用户意图与工具结果，调用工具完成构建推理输出模板，提升模型回答的准确性。数据构造，利用知识构造生成监督微调（SFT）数据集，支持“提取-调用-融合-回答”的链式流程，提升模型领域能力和泛化表现。使用dpo提升模型调用工具能力</p>
+        </div>
+
+        <div>
+            <h3>省市级大创项目《基于深度学习的果园苹果视觉智能识别系统》｜项目负责人 <span class="job-date">2024.4 – 2025.4</span></h3>
+            <p>构建苹果图像深度识别模型，应用于果园复杂环境下，对苹果进行分类分拣，识别定位，对数量、成熟度、质量进行估计，尝试构建采摘机器人可用的视觉识别系统，使用fastapi开发部署于服务器。</p>
+        </div>
+
+        <div>
+            <h3>省市级大创项目《基于深度学习的SAR影像海岸带水淹区域识别算法研究》｜成员 <span class="job-date">2023.4 – 2024.12</span></h3>
+            <p>作为主力成员对于SAR卫星影像的海岸带水流区域的语义分割模型训练深度学习模型，构建出一个可用的数据集，以unet为baseline对此进行优化与改进，通过添加若干组件，引入vit、mamba、膨胀卷积，修改网络结构，使模型效率进行提升。</p>
+        </div>
+
+        <div>
+            <h3>基于springboot的java前后端开发项目《学途智助》｜开发者 <span class="job-date">2024.2 – 2024.7</span></h3>
+            <p>使用基于springboot+jQuery+thymeleaf搭建的前后端的学习多维支持辅助平台，通过构建对应前后端，完成文章笔记共享、todo待办事项、多用户社区、用户私聊，通过flask封装api加python爬虫和构建网课防娱乐本地观看，使用echarts构建浏览器访问使用学习使用可视化分析。集成大语言模型的api实现教育在线问答。本项目获得上海市大学生计算机应用能力大赛二等奖，中国大学生计算机设计大赛国三等奖及一份软著证书。</p>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>技术栈 & 能力</h2>
+        <div class="skill-list">
+            <span>PyTorch</span>
+            <span>TensorFlow</span>
+            <span>深度学习</span>
+            <span>vLLM</span>
+            <span>LLM</span>
+            <span>LangChain</span>
+            <span>MCP</span>
+            <span>RL</span>
+            <span>Flask</span>
+            <span>FastAPI</span>
+            <span>爬虫技术</span>
+            <span>Hadoop</span>
+            <span>Spark</span>
+            <span>Redis</span>
+            <span>MongoDB</span>
+            <span>Cpp</span>
+            <span>EasyX</span>
+            <span>GUI客户端开发</span>
+            <span>算法</span>
+            <span>Java</span>
+            <span>Spring Boot</span>
+            <span>前端开发</span>
+            <span>多线程</span>
+            <span>网络编程</span>
+            <span>Docker</span>
+            <span>Linux</span>
+            <span>操作系统</span>
+            <span>计算机网络</span>
+            <span>计算机组成原理</span>
+            <span>数据结构</span>
+            <span>英语(CET-6)</span>
+        </div>
+    </div>
+</div>
+</body>
+</html>
